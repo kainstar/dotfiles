@@ -1,0 +1,19 @@
+# run command to create symboliclink to your config file path
+# Powershell:
+# New-Item -ItemType SymbolicLink -Target "$DotFileDirectory\git\.gitconfig" -Path "~/.gitconfig"
+[user]
+	name = kainstar
+	email = 461345042@qq.com
+[core]
+	editor = \"D:\\Microsoft VS Code\\bin\\code\" --wait
+[alias]
+	cm = commit
+  ps = push
+  pl = pull
+	br = branch
+	r = remote
+	st = status
+	co = checkout
+	com = checkout master
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	undo = reset HEAD^

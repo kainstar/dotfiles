@@ -2,6 +2,8 @@ $env:POSH_GIT_ENABLED = $true
 
 oh-my-posh --init --shell pwsh --config $env:POSH_THEMES_PATH\amro.omp.json | Invoke-Expression
 
+# Git
+Set-Alias g git
 Import-Module posh-git
 
 # 引入 ps-read-line
@@ -14,8 +16,6 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Import-Module Get-ChildItemColor
 Set-Alias l Get-ChildItem -option AllScope
 Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
-
-Set-Alias g git
 
 # enable volta command completion for powershell
 # https://docs.volta.sh/reference/completions

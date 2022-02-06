@@ -51,10 +51,6 @@ set guifont=DroidSansMono_Nerd_Font:h12 "设置字体
 " start 除了刚输入的，还删除原来的字符
 set backspace=indent,eol,start
 
-" enable mouse mode
-set mouse=a
-behave mswin
-
 " === lightline 插件配置 ===
 let g:lightline = {
 \ 'colorscheme': 'one',

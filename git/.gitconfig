@@ -16,4 +16,8 @@
 	co = checkout
 	com = checkout master
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	undo = reset HEAD^
+  undo = reset HEAD^
+[http]
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = http://127.0.0.1:7890

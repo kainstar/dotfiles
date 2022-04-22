@@ -8,6 +8,17 @@ function ModuleMissing($moduleName) {
       ForEach-Object { Test-Path $_ }).Where( { $_ } ).Count -eq 0
 }
 
+function CmdletMissing($cmdName) {
+  return ![bool](Get-Command $cmdName -errorAction SilentlyContinue)
+}
+
+
+if (CmdletMissing oh-my-posh) {
+  # install oh-my-posh
+  # https://ohmyposh.dev/
+  winget install JanDeDobbeleer.OhMyPosh
+}
+
 if (ModuleMissing PSReadLine) {
   # install PSReadLine
   # https://github.com/PowerShell/PSReadLine

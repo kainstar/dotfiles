@@ -3,6 +3,7 @@
   email = 461345042@qq.com
 [core]
   autocrlf = false
+  eol = lf
 [alias]
   cm = commit
   ps = push
